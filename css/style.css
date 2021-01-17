@@ -1,0 +1,39 @@
+.container-fluid {
+  text-align: center;
+}
+.center-align {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.btn-group > * {
+  margin: 10px;
+}
+.content > * div:nth-child(1) {
+  text-align: end;
+}
+
+.content > * div:nth-child(2) {
+  text-align: start;
+}
+
+.content {
+  justify-content: center;
+}
+body {
+  background-color: black;
+}
+.card {
+  border: 10px solid gray;
+}
+.flight {
+  font-size: 100px;
+}
+
+.search-box {
+  position: absolute;
+  top: 34%;
+  right: 10%;
+}

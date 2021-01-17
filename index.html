@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaceflight News</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="A simple site to get the latest Spaceflight News" />
+    <meta name="keywords" content="Spaceflight News Board, NASA, ISRO" />
+
+    <link rel="icon" type="image/x-icon" href="rocket.png" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-light">&#128640; Spaceflight News Board &#128640;</h1>
+      <div class="center-align">
+        <div class="row">
+          <div class="btn-group" role="group" aria-label="News Categories">
+            <button type="button" class="btn btn-danger" id="articles" onclick="getData(id)">Articles</button>
+            <button type="button" class="btn btn-warning" id="blogs" onclick="getData(id)">Blogs</button>
+            <button type="button" class="btn btn-success" id="reports" onclick="getData(id)">Reports</button>
+          </div>
+        </div>
+      </div>
+      <div id="loader"></div>
+      <br />
+      <h6 id="category" class="text-light"></h6>
+      <br />
+      <div class="center-align">
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="text" class="form-control" id="inputSource" placeholder="Filter by Source" oninput="buildFilter()" />
+        </div>
+      </div>
+      <div class="row content" id="content"></div>
+      <div id="pagination"></div>
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
